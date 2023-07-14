@@ -2,7 +2,8 @@
     import ProjectBox from "$lib/components/ProjectBox.svelte";
 
 </script>
-<div class="w-full h-screen flex flex-col justify-start items-center">
+<div class="w-full h-screen flex flex-col justify-start items-center relative">
+    <div class="w-full h-screen absolute top-0 left-0 z-10 bg-custom bg-cover bg-no-repeat bg-center pointer-events-none"></div>
     <nav class="w-full flex flex-row justify-center items-center py-4 relative shadow-lg shadow-gray-100">
         <a title="Home" class="absolute left-8 cursor-pointer" href="/">
             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="19.588" height="20.992" viewBox="0 0 19.588 20.992">
