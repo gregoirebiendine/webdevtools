@@ -7,6 +7,6 @@
   <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
     <path id="Tracé_1" data-name="Tracé 1" d="M-261-234S-154.12-72.282,80.88,87.718,699,346,699,346H-261Z" transform="translate(261 734)" fill="#8acdea"/>
     <circle id="Ellipse_1" data-name="Ellipse 1" cx="77" cy="77" r="77" transform="translate(1843 1003)" fill="#ccaedb"/>
-    <path id="Tracé_3" data-name="Tracé 3" d="M-261-234S-154.12-72.282,80.88,87.718,699,346,699,346H-261Z" transform="translate(1659 346) rotate(180)" fill="#ffeedb"/>
+    <!-- <path id="Tracé_3" data-name="Tracé 3" d="M-261-234S-154.12-72.282,80.88,87.718,699,346,699,346H-261Z" transform="translate(1659 346) rotate(180)" fill="#ffeedb"/> -->
   </g>
 </svg>
