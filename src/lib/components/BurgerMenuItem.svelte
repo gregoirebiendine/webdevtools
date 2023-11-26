@@ -13,9 +13,9 @@
 	}
 </script>
 
-<div class="w-full rounded-xl {active ? 'bg-slate-100' : ''} hover:bg-slate-100">
+<div class="w-full hover:bg-slate-100" class:bg-slate-100={active}>
     <a class="block py-3" on:click={closeMenu} href={base + href}>
-        <p class="px-4 font-sans text-base text-gray-800">
+        <p class="px-4 font-primary text-base text-gray-800">
             {name}
         </p>
     </a>

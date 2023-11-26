@@ -5,6 +5,8 @@ export type Color = RGB | RGBA | HEX;
 export type ColorObject = {r: number, g: number, b: number, a: number};
 
 export function ColorToOject(color: Color): ColorObject {
+    if (!color)
+        return {r: 0, g: 0, b: 0, a: 0};
     if (color.includes('#')) {
         return {
             r: parseInt(color.slice(1, 3), 16),
