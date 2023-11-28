@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'roboto': 'Roboto, Arial, sans-serif'
+        'roboto': 'Roboto, Arial, sans-serif',
+        'primary': '"Open Sans", sans-serif'
       },
       colors: {
         'soft-purple-1': '#ccaedb',
