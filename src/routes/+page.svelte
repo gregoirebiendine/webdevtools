@@ -1,5 +1,7 @@
 <script lang="ts">
     import ProjectBox from "$lib/components/ProjectBox.svelte";
+
+    import { base } from "$app/paths";
 </script>
 
 <!-- Projects grid -->
@@ -8,29 +10,29 @@
         <ProjectBox
             title="RGBA → RGB Conversion"
             desc="Convert a RGBA color to its RGB&nbsp;equivalent"
-            href="/rgbatorgb"
+            href="{base}/rgbatorgb"
         />
         <ProjectBox
             title="XD → CSS Letter Spacing"
             desc="Convert XD letter spacing to CSS&nbsp;unit"
-            href="/"
+            href="{base}/xdspacing"
         />
         <ProjectBox
             title="CSS Triangle Generator"
             desc="Generate triangle with CSS rules"
-            href="/"
+            href="{base}/csstriangle"
         />
     </div>
     <div class="flex flex-row justify-center items-center gap-8">
         <ProjectBox
             title="CSS Shadow Generator"
             desc="Generate box shadow with CSS&nbsp;rules"
-            href="/"
+            href="{base}/cssshadow"
         />
         <ProjectBox
             title="Non-blocking characters"
             desc="A list of non-blocking characters"
-            href="/"
+            href="{base}/nonblockingchar"
         />
     </div>
 </div>
