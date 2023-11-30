@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { isValidHexColor } from "$lib/types/Color";
-
     export let title: string;
     export let value: string = "#ffffff";
 </script>

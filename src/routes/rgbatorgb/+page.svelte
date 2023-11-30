@@ -1,18 +1,18 @@
 <script lang="ts">
     import ColorPickerBox from "$lib/components/ColorPickerBox.svelte";
-    import { ColorToOject, NumberToHex, isValidHexColor, type Color, type ColorObject, type HEX } from "$lib/types/Color";
+    import { ColorToOject, NumberToHex, type Color, type ColorObject, type HEX } from "$lib/types/Color";
 
-    let rgbBackground: Color;
-    let rgbColor: Color;
-    let rgbaColor: Color;
+    let rgbBackground: Color = "#ffffff";
+    let rgbColor: Color = "#ffffff";
+    let rgbaColor: Color = "#ffffff";
     let opacity: number = 1;
 
-    function RGBAtoRGB(backgroundColor: Color, RGBAColor: Color, opacity: number): HEX {
+    function RGBAtoRGB(backgroundColor: Color, RGBColor: Color, opacity: number): Color {
         const bgColor: ColorObject = ColorToOject(backgroundColor);
-        const rgbaColor: ColorObject = ColorToOject(RGBAColor);
+        const rgbColor: ColorObject = ColorToOject(RGBColor);
         const a = opacity;
     
-        return `#${NumberToHex((1 - a) * bgColor.r + a * rgbaColor.r)}${NumberToHex((1 - a) * bgColor.g + a * rgbaColor.g)}${NumberToHex((1 - a) * bgColor.b + a * rgbaColor.b)}`;
+        return `#${NumberToHex((1 - a) * bgColor.r + a * rgbColor.r)}${NumberToHex((1 - a) * bgColor.g + a * rgbColor.g)}${NumberToHex((1 - a) * bgColor.b + a * rgbColor.b)}`;
     }
 
     $: rgbaColor = RGBAtoRGB(rgbBackground, rgbColor, opacity);
@@ -32,7 +32,7 @@
 
         <hr class="w-full my-8">
 
-        <ColorPickerBox title="RGBA Color" bind:value={rgbaColor}/>
+        <ColorPickerBox title="RGBA Color" value={rgbaColor}/>
 
     </div>
 </section>

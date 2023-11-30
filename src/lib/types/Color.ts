@@ -23,7 +23,7 @@ export function ColorToOject(color: Color): ColorObject {
 }
 
 export function NumberToHex(nb: number): string {
-    return Math.floor(nb).toString(16);
+    return Math.floor(nb).toString(16).padStart(2, "0");
 }
 
 export function isValidHexColor(color: string): boolean {

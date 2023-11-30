@@ -3,7 +3,7 @@
     import BurgerMenu from "$lib/components/BurgerMenu.svelte";
     import Navbar from "$lib/components/Navbar.svelte";
 
-    let isBurgerMenuToggled: boolean = false;
+    let isBurgerMenuToggled: boolean;
 </script>
 
 <div class="w-full h-screen flex flex-col justify-start items-center relative">
@@ -12,7 +12,7 @@
     <Navbar bind:isBurgerMenuToggled/>
 
     <section class="w-full h-full flex flex-col justify-center items-center relative">
-        <BurgerMenu bind:isToggled={isBurgerMenuToggled}/>
+        <BurgerMenu isToggled={isBurgerMenuToggled}/>
 
         <slot />
     </section>
