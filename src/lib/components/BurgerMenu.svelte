@@ -10,7 +10,7 @@
 </script>
 
 <div class="w-fit h-full flex flex-col burgermenu-shadow bg-white p-4 transition-all duration-300 absolute z-20 top-0 {isToggled ? 'left-0' : '-left-full'}">
-    <BurgerMenuItem on:click={toggleBurgerMenu} name="Home" href="{base}"/>
+    <BurgerMenuItem on:click={toggleBurgerMenu} name="Home" href="{base}/"/>
     <BurgerMenuItem on:click={toggleBurgerMenu} name="RGBA → RGB Conversion" href="{base}/rgbatorgb"/>
     <BurgerMenuItem on:click={toggleBurgerMenu} name="XD → CSS Letter Spacing" href="{base}/xdspacing"/>
     <BurgerMenuItem on:click={toggleBurgerMenu} name="CSS Triangle Generator" href="{base}/csstriangle"/>

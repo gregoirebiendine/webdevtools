@@ -11,7 +11,7 @@ export default {
         'primary': '#804bb2',
       },
       backgroundImage: {
-        'custom': 'url("../bg.svg")'
+        'custom': 'url("/bg.svg")'
       }
     },
   },
