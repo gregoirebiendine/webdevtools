@@ -22,10 +22,18 @@ export function ColorToOject(color: Color): ColorObject {
     return {r: nbs[0], g: nbs[1], b: nbs[2], a: nbs[3]};
 }
 
-export function NumberToHex(nb: number): string {
-    return Math.floor(nb).toString(16).padStart(2, "0");
+export function HEXBuilder(r: number, g: number, b: number): HEX {
+    return `#${NumberToHex(r)}${NumberToHex(g)}${NumberToHex(b)}`;
+
 }
 
 export function isValidHexColor(color: string): boolean {
     return color.match(/^#([0-9a-f]{6})$/i) !== null;
+}
+
+
+// Private utils
+
+function NumberToHex(nb: number): string {
+    return Math.floor(nb).toString(16).padStart(2, "0");
 }
